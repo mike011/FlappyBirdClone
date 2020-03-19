@@ -110,7 +110,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
 
-    func makePipes() {
+    @objc func makePipes() {
 
         if gameOver > 0 {
             return
