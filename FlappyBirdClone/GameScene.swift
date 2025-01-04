@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene: SKScene, @preconcurrency SKPhysicsContactDelegate {
 
     var score = 0
     var scoreLabel = SKLabelNode()

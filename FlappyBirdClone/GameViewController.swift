@@ -53,3 +53,15 @@ class GameViewController: UIViewController {
         return true
     }
 }
+
+#Preview {
+    createViewController()
+}
+
+@MainActor
+func createViewController() -> GameViewController {
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let vc = storyboard.instantiateInitialViewController() as! GameViewController
+    vc.loadViewIfNeeded()
+    return vc
+}
